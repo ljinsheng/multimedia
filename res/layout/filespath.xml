@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<LinearLayout
+		android:id="@+id/widget38"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:layout_gravity="center_horizontal"
+		android:gravity="center">
+		<TextView 
+			android:id="@+id/pathtext" 
+			android:layout_width="wrap_content" 
+			android:layout_height="25dp" 
+			android:textSize="15sp" 
+			android:layout_gravity="center_horizontal" /> 
+		<LineaLayout
+	    	android:id="@+id/widget3"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="25dp"
+	    	android:orientation="horizontal">
+	    	<Button
+	    	    android:id="@+id/btn_back"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content" />
+	    	<CheckBox
+	    	    android:id="@+id/cbox"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:checked = "false"
+	    	    android:text="全选" />
+	    </LineaLayout>
+	</LinearLayout>
+	<LineaLayout
+	    android:id="@+id/widget39"
+	    android:layout_width="fill_parent"
+	    android:layout_height="400dp">
+    	 <ListView android:id="@+id/lv"  
+        	 android:layout_width="fill_parent"  
+       	  	 android:layout_height="wrap_content">  
+     	</ListView>
+     </LineaLayout>
+     <LineaLayout
+	    android:id="@+id/widget1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="20dp"
+    	android:orientation="horizontal">
+    	<Button
+    	    android:id="@+id/btn_start"  
+        	 android:layout_width="fill_parent"  
+       	  	 android:layout_height="wrap_content" />
+    	<Button
+    	    android:id="@+id/btn_stop"  
+        	 android:layout_width="fill_parent"  
+       	  	 android:layout_height="wrap_content" />
+     </LineaLayout>
+
+</LinearLayout>

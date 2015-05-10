@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/videoplayer_control_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvCurrTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dip"
+            android:text="00:00:00" />
+
+        <SeekBar
+            android:id="@+id/seek"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:maxHeight="7.0dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" />
+
+        <TextView
+            android:id="@+id/tvDTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="40dip"
+            android:text="00:00:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000003D"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/BtnFullScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dip"
+            android:layout_weight="1"
+            android:background="#0000003D"
+            android:scaleType="fitCenter"
+            android:src="@drawable/screen_169_normal" />
+
+        <ImageButton
+            android:id="@+id/BtnSeekBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#0000003D"
+            android:scaleType="fitCenter"
+            android:src="@drawable/forward_normal" />
+
+        <ImageButton
+            android:id="@+id/BtnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#0000003D"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/BtnSeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#0000003D"
+            android:scaleType="fitCenter"
+            android:src="@drawable/next_normal" />
+
+        <ImageButton
+            android:id="@+id/BtnInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="0dip"
+            android:layout_weight="1"
+            android:background="#0000003D"
+            android:scaleType="fitCenter"
+            android:src="@drawable/info_normal" />
+    </LinearLayout>
+
+</LinearLayout>
